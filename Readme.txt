@@ -1,5 +1,6 @@
-Prathamesh Palaskar 1001232248
-Assignment 10
+Create a web service that allows a user to login, and upload pictures, with comments. Multiple users may use this
+service, and upload their pictures, comments and see others pictures. Users are able to remove their
+pictures. NoSQL database MongoDB is used.
 
 Login.html the login functionality
 Personalpics.html the functionality for displaying only the user files/notes or pictures
