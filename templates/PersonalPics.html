@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Photos</title>
+</head>
+<body>
+<h2> My Photos </h2>
+{% for key,value in data.items() :%}
+     {% for v in value : %}
+        <br><br>
+        <td><tr><img src={{v[0]}} height="200" width="200"/></tr></td>
+        <br>
+        Comments :{{v[1]}}
+     {% endfor %}
+<div>
+ <form action = "/delete_photo" method ="post" enctype = "multipart/form-data">
+        <input type = "hidden" name = "id" value = {{key}} />
+        <input type = 'submit' value='Delete' />
+ </form>
+</div>
+
+{% endfor %}
+
+</body>
+</html>
